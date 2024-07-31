@@ -1,7 +1,13 @@
 package com.erenyurtcu.nutritionproject.service
 
+import com.erenyurtcu.nutritionproject.model.Nutrition
+import retrofit2.http.GET
+
 interface NutritionAPI {
 
-    //https://raw.githubusercontent.com/erenyurtcu/nutritionsDataSet/main/nutritions.json
-    
+    //BASE URL >> https://raw.githubusercontent.com/
+    //ENDPOINT >> erenyurtcu/nutrition-project/main/nutritions.json
+
+    @GET("erenyurtcu/nutrition-project/main/nutritions.json")
+    suspend fun getNutrition() : List<Nutrition>
 }
