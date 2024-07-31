@@ -1,4 +1,4 @@
-package com.erenyurtcu.nutritionproject
+package com.erenyurtcu.nutritionproject.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.erenyurtcu.nutritionproject.databinding.FragmentNutritionDetailBinding
-import com.erenyurtcu.nutritionproject.databinding.FragmentNutritionListBinding
+
 class NutritionDetailFragment : Fragment() {
 
     private var _binding : FragmentNutritionDetailBinding? = null

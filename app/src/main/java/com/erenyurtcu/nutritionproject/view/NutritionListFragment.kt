@@ -1,4 +1,4 @@
-package com.erenyurtcu.nutritionproject
+package com.erenyurtcu.nutritionproject.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
