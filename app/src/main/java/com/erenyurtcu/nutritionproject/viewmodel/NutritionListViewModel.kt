@@ -24,7 +24,7 @@ class NutritionListViewModel (application: Application) : AndroidViewModel(appli
     private val nutritionApiService = NutritionAPIService()
     private val spcSharedPreferences = SpcSharedPreferences(getApplication())
 
-    private val updatedTime = 0.6 /* minute value*/ * 60 * 1000 * 1000 * 1000L
+    private val updatedTime = 10 /* minute value*/ * 60 * 1000 * 1000 * 1000L
 
     fun refreshData(){
         val savedTime = spcSharedPreferences.getTime()

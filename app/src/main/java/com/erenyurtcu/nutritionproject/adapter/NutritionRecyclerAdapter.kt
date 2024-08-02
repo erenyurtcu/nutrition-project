@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.erenyurtcu.nutritionproject.databinding.FragmentNutritionListBinding
 import com.erenyurtcu.nutritionproject.databinding.NutritionRecyclerRowBinding
 import com.erenyurtcu.nutritionproject.model.Nutrition
+import com.erenyurtcu.nutritionproject.util.doPlaceHolder
+import com.erenyurtcu.nutritionproject.util.downloadImage
 import com.erenyurtcu.nutritionproject.view.NutritionListFragmentDirections
 import java.net.BindException
 
@@ -41,6 +43,6 @@ class NutritionRecyclerAdapter (val nutritionList : ArrayList<Nutrition>) : Recy
             val action = NutritionListFragmentDirections.actionNutritionListFragmentToNutritionDetailFragment(nutrition.uuid)
             Navigation.findNavController(it).navigate(action)
         }
-
+        holder.binding.imageView.downloadImage(nutrition.nutritionImage, doPlaceHolder(holder.itemView.context))
     }
 }
