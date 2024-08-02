@@ -27,11 +27,11 @@ class SpcSharedPreferences {
             sharedPreferences = androidx.preference.PreferenceManager.getDefaultSharedPreferences(context)
             return SpcSharedPreferences()
         }
-
-        fun saveTime(time: Long) {
-            sharedPreferences?.edit()?.putLong(TIME,time)?.apply()
-        }
-
-        fun getTime() = sharedPreferences?.getLong(TIME,0)
     }
+
+    fun saveTime(time: Long) {
+        sharedPreferences?.edit()?.putLong(TIME,time)?.apply()
+    }
+
+    fun getTime() = sharedPreferences?.getLong(TIME,0)
 }

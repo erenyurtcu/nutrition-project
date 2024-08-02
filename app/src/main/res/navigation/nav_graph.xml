@@ -18,8 +18,10 @@
         android:id="@+id/nutritionDetailFragment"
         android:name="com.erenyurtcu.nutritionproject.view.NutritionDetailFragment"
         android:label="fragment_nutrition_detail"
-        tools:layout="@layout/fragment_nutrition_detail" />
-    <argument
-        android:name="nutritionId"
-        app:argType="integer" />
+        tools:layout="@layout/fragment_nutrition_detail">
+        <argument
+            android:name="nutritionId"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>

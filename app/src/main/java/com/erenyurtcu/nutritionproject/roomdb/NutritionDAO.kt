@@ -19,6 +19,6 @@ interface NutritionDAO {
     suspend fun getNutrition(nutritionId : Int) : Nutrition
 
     @Query("DELETE FROM nutrition")
-    suspend fun deleteAllNutrition(nutrition : Nutrition)
+    suspend fun deleteAllNutrition()
 
 }
