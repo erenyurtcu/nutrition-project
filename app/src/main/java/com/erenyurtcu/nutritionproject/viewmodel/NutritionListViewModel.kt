@@ -29,7 +29,7 @@ class NutritionListViewModel (application: Application) : AndroidViewModel(appli
     fun refreshData(){
         val savedTime = spcSharedPreferences.getTime()
         if(savedTime != null && savedTime != 0L && System.nanoTime() - savedTime < updatedTime){
-            //get data from room
+            getDataFromRoom()
         } else{
             getDataFromInternet()
         }
